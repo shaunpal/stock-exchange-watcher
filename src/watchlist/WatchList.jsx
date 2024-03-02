@@ -168,7 +168,10 @@ function WatchList({ theme }){
                 }
                 </>
                 :
-                <h1 className="align">No Watchlist found..</h1>
+                <>
+                <h1 className="align">No quotes found..</h1>
+                <p className="align">start searching and selecting on search bar</p>
+                </>
             }  
         </div>
     )
