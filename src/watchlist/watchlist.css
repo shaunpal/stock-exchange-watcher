@@ -19,6 +19,7 @@
     margin-top: 30px;
     overflow-x: scroll;
     position: relative;
+    min-width: 630px;
 }
 .close-div {
   position: absolute;
@@ -180,5 +181,3 @@
       top: 120px;
     }
   }
-
-  
