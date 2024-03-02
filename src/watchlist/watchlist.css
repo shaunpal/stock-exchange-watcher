@@ -1,0 +1,184 @@
+.header {
+    color: black;
+    font-weight: bold;
+    border-bottom: 1px #e8e8e8 solid;
+}
+
+.cell {
+    padding-bottom: 1%;
+    border-bottom: 1px #e8e8e8 solid;
+    height: 3em;
+}
+
+.watchlist-table {
+    min-width: 1100px;
+    margin: 1em;
+}
+
+.watchlist-container {
+    margin-top: 30px;
+    overflow-x: scroll;
+    position: relative;
+}
+.close-div {
+  position: absolute;
+  display: block !important;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  z-index: 10 !important;
+}
+.watchlist-table-container {
+  overflow-x: scroll;
+}
+
+.company-name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.flash {
+    background-color: #29cf69;
+    transition: background-color 500ms linear;
+}
+
+.dark {
+    background-color: #333;
+    color: #fff;
+  }
+  .light {
+    background-color: #fff;
+    color: #333;
+  }
+
+  .container-table-title {
+    font-size: 2em;
+    padding: 0 .5em 0 .5em;
+    margin-bottom: 20px;
+  }
+
+  .up {
+    color: green !important;
+    font-weight: bold;
+  }
+
+  .down {
+    color: red !important;
+    font-weight: bold;
+  }
+
+  .flash-down {
+    animation: blinker-down .3s linear;
+  }
+
+  .flash-up {
+    animation: blinker-up .3s linear;
+  }
+
+  .price {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .flash-price {
+    animation: blinker-price .3s linear;
+  }
+
+  .card-info {
+    margin-left: .3em;
+  }
+
+  .market-status {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: medium;
+  }
+
+  .last-updated-date {
+    text-align: right;
+    padding: 0;
+    margin: 0 0.5em 0.5em 0;
+    font-size: 0.7em;
+  }
+
+  .toggle-button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+
+  .watch-list-module-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em .5em;
+    margin: 10px;
+    border: 1px solid black;
+  }
+
+  .watch-list-card-container {
+    width: 440px;
+    margin: 5px;
+    border: 1px solid purple;
+  }
+  
+  .arrow-left {
+    width:0; 
+    height:0; 
+    border-top:15px solid transparent;
+    border-bottom:15px solid transparent;
+    border-right:15px solid blue; 
+   float: left;
+}
+.button {
+    float: left;
+    height:30px;
+    background:blue;
+    width:55px;
+    line-height:30px;
+    font-weight:bold; 
+    color: white;
+    border-top-right-radius:8px;
+    border-bottom-right-radius:8px;
+}
+.trade-open {
+  position: absolute;
+  display: block;
+  offset-position: left 445px;
+  z-index: 10;
+ 
+  
+}
+.align {
+  text-align: center;
+}
+
+  @keyframes blinker-price {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes blinker-up {
+    50% {
+        background-color: #C3DEBB;
+    }
+  }
+
+  @keyframes blinker-down {
+    50% {
+        background-color: #F0B9B9;
+    } 
+  }
+
+  @media screen and (min-width: 875px) {
+    .watchlist-container {
+      top: 120px;
+    }
+  }
+
+  

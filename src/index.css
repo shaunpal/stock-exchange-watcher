@@ -11,3 +11,113 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.btn-mode {
+  border: 2px gray solid;
+  border-radius: 5px;
+  padding: 3px;
+  margin-right: 10px;
+  margin-left: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+.dark {
+  background-color: #333;
+  color: #fff;
+}
+.light {
+  background-color: #fff;
+  color: #333;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  padding: 3px;
+  margin: 0 1em 0 1em;
+  margin-top: 10px;
+  display: block;
+}
+
+.logo-text {
+  margin-left: 25%;
+  position: absolute;
+  margin-top: -12%;
+  font-style: italic;
+  font-weight: 700;
+  display: block;
+}
+.app-container {
+  display: block;
+  margin: 10px;
+}
+.app-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  overflow-x: scroll;
+  padding: 0;
+  min-width: 715px;
+}
+
+.app-mid-container {
+  margin: 1em 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.mode-btn {
+  margin-top: 1em;
+  cursor: pointer;
+  position: absolute;
+  padding: 3px;
+  display: flex;
+  right: 0;
+}
+
+.menu-nav {
+  visibility: hidden;
+  display: none;
+  cursor: pointer;
+  z-index: 5;
+}
+.app-content {
+  display: block;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 875px) {
+  .logo {
+    visibility: hidden;
+    display: none;
+  }
+
+  .nav-bar-container {
+    visibility: hidden;
+    display: none;
+  }
+
+  .menu-nav {
+    visibility: visible;
+    display: block;
+  }
+
+  .app-header {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+  }
+  .app-mid-container {
+    margin: 1em 0 0 0;
+    width: 100%
+  }
+  .mode-btn {
+    position: relative;
+  }
+}

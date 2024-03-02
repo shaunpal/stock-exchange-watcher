@@ -1,0 +1,170 @@
+.topgains-container {
+    position: relative;
+}
+
+.forms-container {
+    display: block;
+    margin: 1%;
+    border: 1px solid #E6E9EB;
+    background-color: #F5F8FA;
+    margin-bottom: 2%;
+    position: relative;
+    padding: .5% 1% .5% 1%;
+    border-radius: 5px;
+    overflow: scroll;
+    min-width: 504px;
+}
+
+.price-percentage-range, .price-percentage, .volume, .region {
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+    margin-right: 10%;
+    font-size: 1rem;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1rem;
+}
+
+#container-note {
+    position: absolute;
+    right: 30%;
+    color: grey;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1%;
+}
+
+#forms-container-header {
+    margin: 0px;
+}
+
+.form-submit-btn {
+    background-color: cadetblue;
+    width: 150px;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 5px  #039084;
+    font-weight: bold;
+}
+.form-submit-btn:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+.apply-filter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.filter-text {
+    font-size: small;
+}
+.topgains-title {
+    font-size: 2em;
+    padding: 0 .5em 0 .5em;
+}
+.table-panel {
+    padding: 0 1em 1em 1em;
+}
+
+.hide-form {
+    display: none;
+    visibility: hidden;
+}
+
+#hide-btn {
+    position: absolute;
+    right: 10%;
+}
+
+.error-field {
+    border-color: red;
+    border-width: 2px;
+}
+
+.table-container {
+    height: 300px;
+    margin: 5px;
+    overflow-x: scroll;
+}
+
+.table-header-results {
+    text-align: center;
+}
+
+.table-panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.refresh-btn {
+    margin-left: 5px;
+    padding: 5px;
+    background-color: azure;
+    border: 1px black solid;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.dark {
+    background-color: #333;
+    background: #333;
+    color: #fff;
+  }
+  .light {
+    background-color: #fff;
+    background: #fff;
+    color: #333;
+  }
+
+  .table {
+    min-width: 1100px;
+  }
+
+  .is-between {
+    width: 25%;
+  }
+
+  .non-between {
+    width: 25%;
+  }
+
+  .gainers-symbol {
+    width: 80px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+
+  .gainers-symbol:hover {
+    text-decoration: underline;
+  }
+
+  .tooltiptext {
+    color: #039084;
+    font-size: 10px;
+    background-color: aliceblue;
+    border: .5px black solid;
+    border-radius: 4px;
+    padding: .5em;
+    position: absolute;
+    margin-top: -3em;
+    z-index: 1;
+  }
+
+  @media screen and (min-width: 870px) {
+    .topgains-container {
+        top: 150px;
+    }
+  }
+  

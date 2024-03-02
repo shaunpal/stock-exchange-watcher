@@ -1,0 +1,51 @@
+.overview-container {
+    margin-top: 30px;
+    width: 770px;
+    overflow-x: scroll;
+    position: relative;
+}
+
+.overview-container-title {
+    margin-left: 1em;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.result-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1em 1em 0 2em;
+    align-items: center;
+}
+.quote-name {
+    font-size: 10px;
+    container-name: quote;
+    width: 560px;
+}
+.header-p {
+    width: 560px;
+}
+@container quote (min-width: 400px) {
+    .quote-name {
+        font-size: 7px;
+    }
+}
+
+.loading-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+@media screen and (min-width: 870px) {
+    .overview-container {
+        top: 120px;
+    }
+
+    .loading-div {
+        top: 120px;
+    }
+  }

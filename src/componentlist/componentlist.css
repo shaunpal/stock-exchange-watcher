@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.componentlist-container {
+    display: block;
+    top: 50%;
+    position: absolute;
+    border: 1px solid black;  /* to remove  */
+    width: 100%;
+    z-index: 0;
+}
+
+* {
+    --tw-ring-color: rgb(0 0 0 / 0) !important;
+  }
+
+.watchlist-tab button {
+    color: chocolate !important;
+}
