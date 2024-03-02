@@ -72,7 +72,7 @@ function Overview({theme}){
     useEffect(() => {
         try {
             if(quotes.length > 0){
-                getQueryData(`${process.env.REACT_APP_SEARCH_QUOTE_URL}=${symbol}`).then((res) => {
+                getQueryData(`${process.env.REACT_APP_GET_QUOTE_URL}=${symbol}`).then((res) => {
                     const resp = res
                     setResult(resp)
                     enrichResponse(quotes, symbol, resp)
