@@ -10,8 +10,8 @@ function WatchListStream({
     mode,
 }){
     const quoteData = quote?.timestamps?.map((e, i) => [parseInt(`${e}000`), quote?.adjclose[i]]);
+    const Chart = mode === 'dark'? WatchListChartDark : WatchListChartLight
     // eslint-disable-next-line
-    const Chart = mode === 'dark'? WatchListChartDark : WatchListChartLight 
     const [ data, setData ] = useState(quoteData)
     
     const options = {

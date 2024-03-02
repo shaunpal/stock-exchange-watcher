@@ -168,7 +168,7 @@ function WatchList({ theme }){
                 }
                 </>
                 :
-                <h1>No Watchlist found..</h1>
+                <h1 className="align">No Watchlist found..</h1>
             }  
         </div>
     )

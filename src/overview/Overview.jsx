@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import './overview.css'
 import SearchResult from "../searchresult/SearchResult";
 import toast, { Toaster } from "react-hot-toast";
@@ -9,6 +9,7 @@ function Overview({theme}){
     const [ quotes, setQuotes ] = useState([])
     const [ result, setResult ] = useState(null)
     const { symbol } = useParams();
+    const navigate = useNavigate()
 
     const timestamp = () => {
         return "As of "+new Date().toString()
@@ -61,11 +62,17 @@ function Overview({theme}){
       useEffect(() => {
         try {
             getQueryData(`${process.env.REACT_APP_SEARCH_QUOTE_URL}=${symbol}`).then((res) => {
-                setQuotes(res.quotes)
+                if (res?.quotes?.length > 0) {
+                    setQuotes(res.quotes)
+                } else {
+                    navigate(`/search/${symbol}/not-found`)
+                }
+                
             })
         } catch (error) {
             toast.error("Unable to connect to server")
         }
+    // eslint-disable-next-line
     }, [symbol])
 
 
