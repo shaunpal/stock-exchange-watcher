@@ -15,7 +15,7 @@ function WatchListCard({
             <div className="card-info">
                 <span><b>{quote.Company}</b> ({quote.Symbol}) - {quote.Exchange}</span>
                 {isNumber ? 
-                <div className={`${changeColor(quote.Change)}`}><span><span>{ parseFloat(quote.Change) > 0? <TbTriangleFilled size={14} color="green" /> : <TbTriangleInvertedFilled size={14} color="red" />} {quote.Open}</span></span><span>{ parseFloat(quote.Change) < 0? quote.Change : '+'+quote.Change}</span></div>
+                <div className={`${changeColor(quote.Change)}`}><span><span>{ parseFloat(quote.Change) > 0? <TbTriangleFilled size={14} color="green" /> : <TbTriangleInvertedFilled size={14} color="red" />} {quote.Open}</span></span>&nbsp;&nbsp;<span>{ parseFloat(quote.Change) < 0? quote.Change : '+'+quote.Change}</span></div>
                 :
                 <div><b>{quote.Open}</b></div>
                 }
