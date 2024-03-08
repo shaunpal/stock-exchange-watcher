@@ -45,7 +45,7 @@ function CryptoList({ theme }){
             })
         })
         toast.promise(promisedResponse,{
-            pending: "Fetching crypto quotes",
+            loading: "Fetching crypto quotes",
             success: "Successully fetched",
             error: "error fetching quotes",
         })

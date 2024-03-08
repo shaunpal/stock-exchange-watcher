@@ -29,13 +29,14 @@ function WatchList({ theme }){
             }).then((response) => {
                 if(response.ok){
                     resolve(response.json())
-                    toast.success('Successully subscribed')
-                }
-                
-            }).catch((error) => {
-                toast.error("unable to subscribe quotes")
-                return
+                }  
             })
+        })
+
+        toast.promise(promisedResponse, {
+            loading: "Subscribing watchlist quotes",
+            success: "Successully subscribed",
+            error: "error subscribing quotes",
         })
 
         promisedResponse.then((resp) => {

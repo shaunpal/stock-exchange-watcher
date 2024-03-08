@@ -144,7 +144,7 @@ function TopGains({ theme }){
             })
         })
         toast.promise(promisedResponse,{
-            pending: "Fetching queried quotes",
+            loading: "Fetching queried quotes",
             success: "Successully fetched",
             error: "error fetching quotes",
         })
@@ -163,7 +163,7 @@ function TopGains({ theme }){
             });
         })
         toast.promise(promisedResponse, {
-            pending: "Fetching gainers quotes",
+            loading: "Fetching gainers quotes",
             success: "Successully fetched",
             error: "error fetching quotes",
         })

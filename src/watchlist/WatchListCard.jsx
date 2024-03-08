@@ -9,7 +9,6 @@ function WatchListCard({
     quote,
     mode
 }) {
-    console.log('inside card quote.Change..', quote.Change)
     const isNumber = typeof parseFloat(quote.Change) === 'number'
     return (
         <div className="watch-list-card-container">
