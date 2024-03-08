@@ -94,6 +94,7 @@
     height: 300px;
     margin: 5px;
     overflow-x: scroll;
+    min-width: 504px;
 }
 
 .table-header-results {

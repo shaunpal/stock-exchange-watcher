@@ -9,13 +9,17 @@
     margin: 1em;
 }
 
-.crypto-table-container {
+.crypto-container {
     top: 150px;
     margin-top: 30px;
     height: 500px;
-    overflow-x: scroll;
-    overflow-y: hidden;
     position: relative;
+    
+}
+
+.crypto-table-container {
+    min-width: 504px;
+    overflow-x: scroll;
 }
 
 .crypto-images {
@@ -39,7 +43,7 @@
 }
 
 @media screen and (max-width: 875px) {
-    .crypto-table-container {
+    .crypto-container {
         top: 30px;
     }
     

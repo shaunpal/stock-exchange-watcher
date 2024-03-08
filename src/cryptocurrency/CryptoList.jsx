@@ -62,11 +62,13 @@ function CryptoList({ theme }){
     useEffect(() => {}, [cryptoList, cryptoImgs])
 
     return (
-        <div className="crypto-table-container">
+        <div className="crypto-container">
           <Toaster />
           <h1 className="table-container-title"><b>Cryptocurrency</b></h1>
           {cryptoList && cryptoList?.nodes?.length > 0?
+          <div className="crypto-table-container">
           <CryptoListTable modeTheme={theme} data={cryptoList} images={cryptoImgs} />
+          </div>
           : <h1 className="table-header-results">No results found..</h1>
           }
         </div>
