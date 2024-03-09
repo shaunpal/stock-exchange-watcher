@@ -6,7 +6,7 @@ function NewsTicker({ mode }) {
     const [newsFlash, setNewsFlash] = useState([])
     const getLatestNews = async () => {
       try {
-        const resp = await fetch('http://localhost:8080/latest-news', {
+        const resp = await fetch(`${process.env.REACT_APP_LATEST_NEWS_URL}`, {
             method: 'GET'
         })
         return resp.json()
