@@ -12,7 +12,7 @@
     padding: .5% 1% .5% 1%;
     border-radius: 5px;
     overflow: scroll;
-    min-width: 504px;
+    min-width: 604px;
 }
 
 .price-percentage-range, .price-percentage, .volume, .region {
@@ -94,7 +94,7 @@
     height: 300px;
     margin: 5px;
     overflow-x: scroll;
-    min-width: 504px;
+    min-width: 604px;
 }
 
 .table-header-results {

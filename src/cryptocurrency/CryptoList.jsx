@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { DEFAULT_EMPTY_NODES } from '../utils/index.js'
 import CryptoListTable from "./CryptoListTable.jsx";
+import NewsTicker from "../newsticker/NewsTicker.jsx";
 
 async function getTableQueries(){
     const requestOptions = {
@@ -64,6 +65,7 @@ function CryptoList({ theme }){
     return (
         <div className="crypto-container">
           <Toaster />
+          <NewsTicker />
           <h1 className="table-container-title"><b>Cryptocurrency</b></h1>
           {cryptoList && cryptoList?.nodes?.length > 0?
           <div className="crypto-table-container">

@@ -9,6 +9,7 @@ import { LuRefreshCcw } from "react-icons/lu";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowDown } from "react-icons/io";
 import { useNavigate } from 'react-router-dom'
+import NewsTicker from "../newsticker/NewsTicker.jsx";
 
 class GainsPayload {
     price
@@ -174,8 +175,9 @@ function TopGains({ theme }){
 
     return (
         <div className="topgains-container">
-            <h1 className="topgains-title"><b>Stock Gainers</b></h1>
             <Toaster />
+            <NewsTicker />
+            <h1 className="topgains-title"><b>Stock Gainers</b></h1>
             <div className={`forms-container ${theme}`}>
                 <h3 className="apply-filter">{!isEdit? <IoIosArrowForward onClick={showForm} /> : <IoIosArrowDown onClick={hideForm} />} &nbsp;<b>Apply filters</b></h3>
                 <form className="submit-form hide-form" onSubmit={formSubmit}>
