@@ -4,6 +4,7 @@ import './overview.css'
 import SearchResult from "../searchresult/SearchResult";
 import toast, { Toaster } from "react-hot-toast";
 import ReactLoading from 'react-loading';
+import NewsTicker from "../newsticker/NewsTicker";
 
 function Overview({theme}){
     const [ quotes, setQuotes ] = useState([])
@@ -98,6 +99,8 @@ function Overview({theme}){
         <>
         {result != null && result['Company'] && quotes.length > 0? 
             (
+            <div className="overview-top-container">
+            <NewsTicker />
             <div className={`overview-container ${theme}`}>
                 <Toaster />
                 <h1 className="overview-container-title">Overview</h1>
@@ -109,6 +112,7 @@ function Overview({theme}){
                     <button className="add-watchlist-btn" onClick={() => insertLocalStorage(result)}><span>Add to Watchlist </span></button>
                 </div>
                 <SearchResult data={result} />
+            </div>
             </div>
             )
             :

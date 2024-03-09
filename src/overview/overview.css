@@ -1,5 +1,8 @@
+.overview-top-container{
+    position: relative;
+    top: 4em;
+}
 .overview-container {
-    margin-top: 30px;
     width: 770px;
     overflow-x: scroll;
     position: relative;
@@ -41,11 +44,13 @@
 }
 
 @media screen and (min-width: 870px) {
-    .overview-container {
-        top: 120px;
-    }
-
     .loading-div {
         top: 120px;
     }
-  }
+}
+
+@media screen and (max-width: 870px) {
+    .overview-top-container{
+        margin-top: -2em;
+    }
+}
